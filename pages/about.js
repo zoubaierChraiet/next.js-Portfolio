@@ -16,7 +16,7 @@ export default function About() {
     <Layout title="About">
       {user ? (
         <div>
-          <p> {user.login} </p>
+          <p> {user.name} </p>
           <img
             src={user.avatar_url}
             height="200px"

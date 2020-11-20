@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import Router from "next/router";
 import nprog from "nprogress";
@@ -13,6 +14,9 @@ Router.onRouteChangeComplete = () => {
 function Layout({ children, title }) {
   return (
     <div className="root">
+      <Head>
+        <title>nextPortfolio</title>
+      </Head>
       <header className="header">
         <Link href="/">
           <a>Home</a>
@@ -27,7 +31,7 @@ function Layout({ children, title }) {
           <a>Blog</a>
         </Link>
       </header>
-      <p>{title}</p>
+      <h1>{title}</h1>
       <div>{children}</div>
       <footer className="footer">&copy; {new Date().getFullYear()}</footer>
       <style jsx>{`
