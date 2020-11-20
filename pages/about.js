@@ -9,7 +9,6 @@ export default function About() {
       "https://api.github.com/users/zoubaierChraiet"
     );
     const data = await fetchedUser.json();
-    console.log(data);
     setUser(data);
   }, []);
 

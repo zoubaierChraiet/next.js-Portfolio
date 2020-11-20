@@ -1,7 +1,6 @@
 import Layout from "../components/Layout";
 
-function post({ url }) {
-  console.log(url);
+function post() {
   return (
     <Layout>
       <p>React</p>
